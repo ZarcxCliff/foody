@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.scss";
-import { Header } from "../../components";
+import { ExploreMenu, FoodDisplay, Header } from "../../components";
 
 const Home = () => {
+    const [category, setCategory] = useState("All");
     return (
         <div className="home">
             <Header />
+            <ExploreMenu category={category} setCategory={setCategory} />
+            <FoodDisplay />
         </div>
     );
 };

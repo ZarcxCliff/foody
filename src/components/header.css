@@ -19,12 +19,12 @@
 }
 .header-content h2 {
     font-weight: 600;
-    color: rgb(40, 247, 40);
+    color: #3cec97;
     font-size: max(4.5vw, 22px);
     margin-bottom: 10px;
 }
 .header-content p {
-    color: rgb(40, 247, 40);
+    color: #3cec97;
     font-size: 1.25vw;
 }
 .header-content .blur {
@@ -36,8 +36,8 @@
     padding-left: 10px;
 }
 .header-content button {
-    border: none;
-    color: rgb(40, 247, 40);
+    border: 1px solid rgba(132, 60, 0, 0.472);
+    color: #3cec97;
     font-weight: 500;
     padding: 1vw 2.3vw;
     border-radius: 50px;
@@ -48,5 +48,5 @@
 .header-content button:hover {
     color: white;
 
-    background-color: rgb(40, 247, 40);
+    background-color: #3cec97;
 }
