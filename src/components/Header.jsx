@@ -15,7 +15,9 @@ const Header = () => {
                         Delicious meal at a time.Eat healthy , eat well.
                     </p>
                 </div>
-                <button>View Menu</button>
+                <button>
+                    <a href="#explore_menu">View Menu</a>{" "}
+                </button>
             </div>
         </div>
     );

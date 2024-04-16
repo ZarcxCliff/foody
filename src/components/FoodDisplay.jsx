@@ -9,18 +9,21 @@ const FoodDisplay = ({ category }) => {
         <div className="food_display" id="food_display">
             <h2>Top dishes near you</h2>
             <div className="food_display_list">
-                {food_list.map((item, index) => {
-                    return (
+                {food_list
+                    .filter(
+                        (food) =>
+                            category === "All" || category === food.category
+                    )
+                    .map((food, index) => (
                         <FoodItem
                             key={index}
-                            id={item._id}
-                            name={item.name}
-                            description={item.description}
-                            price={item.price}
-                            image={item.image}
+                            id={food._id}
+                            name={food.name}
+                            description={food.description}
+                            price={food.price}
+                            image={food.image}
                         />
-                    );
-                })}
+                    ))}
             </div>
         </div>
     );

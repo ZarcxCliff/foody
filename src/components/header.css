@@ -5,6 +5,7 @@
     background-size: cover;
     position: relative;
     backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 .header-content {
     position: absolute;
@@ -20,19 +21,19 @@
 .header-content h2 {
     font-weight: 600;
     color: #3cec97;
-    font-size: max(4.5vw, 22px);
-    margin-bottom: 10px;
+    font-size: max(4.5vw, 21px);
+    margin-bottom: 2.5px;
 }
 .header-content p {
     color: #3cec97;
-    font-size: 1.25vw;
+    font-size: 1.2vw;
 }
 .header-content .blur {
     background-color: rgba(132, 60, 0, 0.472);
     border: none;
     border-radius: 10px;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
 }
 .header-content button {
@@ -42,11 +43,48 @@
     padding: 1vw 2.3vw;
     border-radius: 50px;
     font-size: max(1.25vw, 13px);
-    margin-top: 20px;
+    margin-top: 10px;
     transition: 0.3s;
 }
 .header-content button:hover {
     color: white;
 
     background-color: #3cec97;
+}
+
+@media (max-width: 1050px) {
+    .header-content {
+        max-width: 45%;
+    }
+    .header-content .blur {
+        background-color: rgba(132, 60, 0, 0.472);
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        padding-left: 7px;
+    }
+    .header-content p {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-content {
+        max-width: 65%;
+    }
+    .header-content p {
+        display: none;
+    }
+    .header-content button {
+        padding: 2vw 4vw;
+    }
+    .header-content .blur {
+        background-color: rgba(132, 60, 0, 0.472);
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 2px;
+    }
 }

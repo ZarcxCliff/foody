@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./home.scss";
-import { ExploreMenu, FoodDisplay, Header } from "../../components";
+import {
+    AppDownload,
+    ExploreMenu,
+    FoodDisplay,
+    Header,
+} from "../../components";
 
 const Home = () => {
     const [category, setCategory] = useState("All");
@@ -8,7 +13,8 @@ const Home = () => {
         <div className="home">
             <Header />
             <ExploreMenu category={category} setCategory={setCategory} />
-            <FoodDisplay />
+            <FoodDisplay category={category} />
+            <AppDownload />
         </div>
     );
 };
